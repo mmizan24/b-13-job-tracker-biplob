@@ -1,49 +1,6 @@
-// function getTransferFromAll(id){
-//     const restore=document.getElementById(id);
-//     const value=restore.innerText
-//     console.log(id,value);
-//     return value;
-// }
-
-
-//  another option .for btn toggleing ........................................
-
-// const container = document.getElementById('button-container');
-
-// container.addEventListener('click', (e) => {
-//   // 1. Ensure we only act if a button was clicked
-//   const clickedBtn = e.target.closest('button');
-//   if (!clickedBtn) return;
-
-//   // 2. Find the one button that currently has the active classes
-//   const currentActive = container.querySelector('.bg-blue-600');
-
-//   // 3. Swap classes between the old active and the new clicked button
-//   if (currentActive) {
-//     currentActive.classList.replace('bg-blue-600', 'text-gray-600');
-//     currentActive.classList.remove('text-white');
-//   }
-
-//   clickedBtn.classList.replace('text-gray-600', 'bg-blue-600');
-//   clickedBtn.classList.add('text-white');
-// });
-
-// const interOneBtn = document.getElementById('btn-inter-one');
-// const firstJobSection = document.getElementById('first-job');
-
-// interOneBtn.addEventListener('click', () => {
-//   // This adds 'hidden' if it's missing, or removes it if it's there
-//   firstJobSection.classList.add('hidden'); 
-
-//   // Logic Tip: If you want it to reappear on a second click, use .toggle()
-//   // firstJobSection.classList.toggle('hidden');
-// });
-
-// btn --toggling end here .........................................................
-
-
 
 // Initialize arrays to store interview and rejected jobs
+
 let interveiwList = [];
 let rejectedList = [];
 
@@ -248,6 +205,7 @@ function renderFilteredJobs(type) {
                         </div>
                         <div class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold ${bgColor} ${textColor} mb-4">
                             <span class="status-text">${statusText}</span>
+                           
                         </div>
                         <div class="flex gap-3">
                             <button class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 rounded-lg interview-btn">INTERVIEW</button>
@@ -295,5 +253,3 @@ function toggleStyle(id) {
     }
 }
 
-// Update counts every second as backup (optional, can be removed if not needed)
-// setInterval(calculateCount, 1000);`
