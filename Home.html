@@ -64,9 +64,23 @@
 
         <section id="pri-btn" class="py-5 w-full mx-auto">
             <section class="py-5">
-                <div id="button-container" class="flex gap-x-4 md:gap-x-10 flex-wrap">
+                <div id="button-container" class="flex justify-between gap-x-4 md:gap-x-10 flex-wrap">
+
+                    <!-- <button id="btn-all" onclick="toggleStyle('btn-all')" class="tab-btn px-4 py-2 rounded-lg">
+                        All
+                    </button>
+
+                    <button id="btn-interview" onclick="toggleStyle('btn-interview')"
+                        class="tab-btn px-4 py-2 rounded-lg">
+                        Interview
+                    </button>
+
+                    <button id="btn-rejected" onclick="toggleStyle('btn-rejected')"
+                        class="tab-btn px-4 py-2 rounded-lg">
+                        Rejected
+                    </button> -->
                     <button onclick="toggleStyle('btn-all')" id="btn-all"
-                        class="tab-btn px-6 py-2 rounded-md bg-blue-600 text-white w-auto min-w-[120px] shadow-sm transition-all">
+                        class="tab-btn px-6 py-2 rounded-md bg-blue-600 text-white w-auto min-w-[120px] shadow-sm  transition-all">
                         All
                     </button>
                     <button onclick="toggleStyle('btn-interview')" id="btn-interview"
@@ -94,32 +108,42 @@
                         class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-xl shadow-sm relative transition-shadow hover:shadow-md">
                         <div class="flex justify-between">
                             <div>
-                                <h2 class="text-xl font-bold text-slate-900 dark:text-white company">Mobile First Corp</h2>
-                                <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">React Native Developer</p>
-                                <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-500 mb-4">
+                                <h2 class="text-xl font-bold text-slate-900 dark:text-white company">Mobile First Corp
+                                </h2>
+                                <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">React Native
+                                    Developer</p>
+                                <div
+                                    class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-500 mb-4">
                                     <span class="flex items-center gap-1 job-pattern">Remote</span>
                                     <span class="flex items-center gap-1 job-time">Full-time</span>
                                     <span class="flex items-center gap-1 salary-range">$130,000 - $175,000</span>
                                 </div>
                             </div>
                             <div class="flex gap-3 items-center">
-                                <button class="px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn">
-                                    <span class="flex items-center gap-1">
-                                        <span class="material-icons-outlined text-sm">delete</span>
-                                        DELETE
+
+                                
+                                <button
+                                    class=" rounded-full px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400  hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn w-1/3">
+                                    <span class="flex items-center justify-center  gap-1">
+                                        <span class="material-icons-outlined  ">delete</span>
+                                        
                                     </span>
                                 </button>
                             </div>
                         </div>
-                        <div class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
+                        <div
+                            class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
                             <span class="status-text">NOT APPLIED</span>
                         </div>
                         <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 notes">
-                            Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.
+                            Build cross-platform mobile applications using React Native. Work on products used by
+                            millions of users worldwide.
                         </p>
                         <div class="flex gap-3">
-                            <button class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
-                            <button class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
+                            <button
+                                class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
+                            <button
+                                class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
                         </div>
                     </div>
                 </div>
@@ -132,7 +156,8 @@
                     <div class="flex justify-between items-start">
                         <div>
                             <h2 class="text-xl font-bold text-slate-900 dark:text-white company">WebFlow Agency</h2>
-                            <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">Web Designer & Developer</p>
+                            <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">Web Designer &
+                                Developer</p>
                             <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-500 mb-4">
                                 <span class="flex items-center gap-1 job-pattern">Los Angeles, CA</span>
                                 <span class="flex items-center gap-1 job-time">Part-time</span>
@@ -140,23 +165,28 @@
                             </div>
                         </div>
                         <div class="flex gap-3 items-center">
-                            <button class="px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn">
-                                <span class="flex items-center gap-1">
-                                    <span class="material-icons-outlined text-sm">delete</span>
-                                    DELETE
-                                </span>
-                            </button>
+                            <button
+                                    class=" rounded-full px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400  hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn w-1/3">
+                                    <span class="flex items-center justify-center  gap-1">
+                                        <span class="material-icons-outlined  ">delete</span>
+                                        
+                                    </span>
+                                </button>
                         </div>
                     </div>
-                    <div class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
+                    <div
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
                         <span class="status-text">NOT APPLIED</span>
                     </div>
                     <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 notes">
-                        Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+                        Create stunning web experiences for high-profile clients. Must have portfolio and experience
+                        with modern web design trends.
                     </p>
                     <div class="flex gap-3">
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
                     </div>
                 </div>
             </section>
@@ -168,7 +198,8 @@
                     <div class="flex justify-between items-start">
                         <div>
                             <h2 class="text-xl font-bold text-slate-900 dark:text-white company">DataViz Solutions</h2>
-                            <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">Data Visualization Specialist</p>
+                            <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">Data Visualization
+                                Specialist</p>
                             <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-500 mb-4">
                                 <span class="flex items-center gap-1 job-pattern">Boston, MA</span>
                                 <span class="flex items-center gap-1 job-time">Full-time</span>
@@ -176,23 +207,28 @@
                             </div>
                         </div>
                         <div class="flex gap-3 items-center">
-                            <button class="px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn">
-                                <span class="flex items-center gap-1">
-                                    <span class="material-icons-outlined text-sm">delete</span>
-                                    DELETE
-                                </span>
-                            </button>
+                           <button
+                                    class=" rounded-full px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400  hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn w-1/3">
+                                    <span class="flex items-center justify-center  gap-1">
+                                        <span class="material-icons-outlined  ">delete</span>
+                                        
+                                    </span>
+                                </button>
                         </div>
                     </div>
-                    <div class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
+                    <div
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
                         <span class="status-text">NOT APPLIED</span>
                     </div>
                     <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 notes">
-                        Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.
+                        Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong
+                        analytical thinking.
                     </p>
                     <div class="flex gap-3">
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
                     </div>
                 </div>
             </section>
@@ -212,23 +248,28 @@
                             </div>
                         </div>
                         <div class="flex gap-3 items-center">
-                            <button class="px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn">
-                                <span class="flex items-center gap-1">
-                                    <span class="material-icons-outlined text-sm">delete</span>
-                                    DELETE
-                                </span>
-                            </button>
+                            <button
+                                    class=" rounded-full px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400  hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn w-1/3">
+                                    <span class="flex items-center justify-center  gap-1">
+                                        <span class="material-icons-outlined  ">delete</span>
+                                        
+                                    </span>
+                                </button>
                         </div>
                     </div>
-                    <div class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
+                    <div
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
                         <span class="status-text">NOT APPLIED</span>
                     </div>
                     <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 notes">
-                        Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.
+                        Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps
+                        practices and cloud infrastructure.
                     </p>
                     <div class="flex gap-3">
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
                     </div>
                 </div>
             </section>
@@ -248,23 +289,28 @@
                             </div>
                         </div>
                         <div class="flex gap-3 items-center">
-                            <button class="px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn">
-                                <span class="flex items-center gap-1">
-                                    <span class="material-icons-outlined text-sm">delete</span>
-                                    DELETE
-                                </span>
-                            </button>
+                            <button
+                                    class=" rounded-full px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400  hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn w-1/3">
+                                    <span class="flex items-center justify-center  gap-1">
+                                        <span class="material-icons-outlined  ">delete</span>
+                                        
+                                    </span>
+                                </button>
                         </div>
                     </div>
-                    <div class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
+                    <div
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
                         <span class="status-text">NOT APPLIED</span>
                     </div>
                     <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 notes">
-                        Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.
+                        Create beautiful and functional user interfaces for our suite of products. Strong design skills
+                        and frontend development expertise required.
                     </p>
                     <div class="flex gap-3">
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
                     </div>
                 </div>
             </section>
@@ -276,7 +322,8 @@
                     <div class="flex justify-between items-start">
                         <div>
                             <h2 class="text-xl font-bold text-slate-900 dark:text-white company">MegaCorp Solutions</h2>
-                            <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">JavaScript Developer</p>
+                            <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">JavaScript Developer
+                            </p>
                             <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-500 mb-4">
                                 <span class="flex items-center gap-1 job-pattern">New York, NY</span>
                                 <span class="flex items-center gap-1 job-time">Full-time</span>
@@ -284,23 +331,28 @@
                             </div>
                         </div>
                         <div class="flex gap-3 items-center">
-                            <button class="px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn">
-                                <span class="flex items-center gap-1">
-                                    <span class="material-icons-outlined text-sm">delete</span>
-                                    DELETE
-                                </span>
-                            </button>
+                           <button
+                                    class=" rounded-full px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400  hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn w-1/3">
+                                    <span class="flex items-center justify-center  gap-1">
+                                        <span class="material-icons-outlined  ">delete</span>
+                                        
+                                    </span>
+                                </button>
                         </div>
                     </div>
-                    <div class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
+                    <div
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
                         <span class="status-text">NOT APPLIED</span>
                     </div>
                     <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 notes">
-                        Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.
+                        Build enterprise applications with JavaScript and modern frameworks. We offer competitive
+                        compensation, health insurance, and professional development opportunities.
                     </p>
                     <div class="flex gap-3">
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
                     </div>
                 </div>
             </section>
@@ -312,7 +364,8 @@
                     <div class="flex justify-between items-start">
                         <div>
                             <h2 class="text-xl font-bold text-slate-900 dark:text-white company">StartupXYZ</h2>
-                            <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">Full Stack Engineer</p>
+                            <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">Full Stack Engineer
+                            </p>
                             <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-500 mb-4">
                                 <span class="flex items-center gap-1 job-pattern">Remote</span>
                                 <span class="flex items-center gap-1 job-time">Full-time</span>
@@ -320,23 +373,28 @@
                             </div>
                         </div>
                         <div class="flex gap-3 items-center">
-                            <button class="px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn">
-                                <span class="flex items-center gap-1">
-                                    <span class="material-icons-outlined text-sm">delete</span>
-                                    DELETE
-                                </span>
-                            </button>
+                            <button
+                                    class=" rounded-full px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400  hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn w-1/3">
+                                    <span class="flex items-center justify-center  gap-1">
+                                        <span class="material-icons-outlined  ">delete</span>
+                                        
+                                    </span>
+                                </button>
                         </div>
                     </div>
-                    <div class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
+                    <div
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
                         <span class="status-text">NOT APPLIED</span>
                     </div>
                     <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 notes">
-                        Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.
+                        Join our fast-growing startup and work on our core platform. Experience with Node.js and React
+                        required. Great benefits and equity package included.
                     </p>
                     <div class="flex gap-3">
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
                     </div>
                 </div>
             </section>
@@ -347,8 +405,10 @@
                     class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-xl shadow-sm relative transition-shadow hover:shadow-md">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h2 class="text-xl font-bold text-slate-900 dark:text-white company">TechCorp Industries</h2>
-                            <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">Senior Frontend Developer</p>
+                            <h2 class="text-xl font-bold text-slate-900 dark:text-white company">TechCorp Industries
+                            </h2>
+                            <p class="text-slate-600 dark:text-slate-400 font-medium mb-2 skills">Senior Frontend
+                                Developer</p>
                             <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-500 mb-4">
                                 <span class="flex items-center gap-1 job-pattern">San Francisco, CA</span>
                                 <span class="flex items-center gap-1 job-time">Full-time</span>
@@ -356,23 +416,28 @@
                             </div>
                         </div>
                         <div class="flex gap-3 items-center">
-                            <button class="px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn">
-                                <span class="flex items-center gap-1">
-                                    <span class="material-icons-outlined text-sm">delete</span>
-                                    DELETE
-                                </span>
-                            </button>
+                            <button
+                                    class=" rounded-full px-4 py-2 text-sm font-bold border-2 border-gray-500 text-gray-600 dark:text-gray-400  hover:bg-gray-50 dark:hover:bg-gray-950/30 transition-colors delete-btn w-1/3">
+                                    <span class="flex items-center justify-center  gap-1">
+                                        <span class="material-icons-outlined  ">delete</span>
+                                        
+                                    </span>
+                                </button>
                         </div>
                     </div>
-                    <div class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
+                    <div
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 mb-4 status-badge">
                         <span class="status-text">NOT APPLIED</span>
                     </div>
                     <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 notes">
-                        We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+                        We are looking for an experienced Frontend Developer to build scalable web applications using
+                        React and TypeScript. You will work with a talented team on cutting-edge projects.
                     </p>
                     <div class="flex gap-3">
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
-                        <button class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-green-500 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-50 dark:hover:bg-green-950/30 transition-colors interview-btn">INTERVIEW</button>
+                        <button
+                            class="px-4 py-2 text-sm font-bold border-2 border-red-500 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors reject-btn">REJECTED</button>
                     </div>
                 </div>
             </section>

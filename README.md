@@ -1,77 +1,214 @@
 
 
 
-# Main Requirements
-
-## Design Part
-
-## Dashboard
-- Website name and Create a dashboard like figma 
-- The section should be responsive for mobile devices. It is totally up to you. 
-
-## Available Jobs Section
-- A title on the left side, jobs count on the right side 
-- 3 different tab  below the section title 
-- Minimum 8 cards with:
-	- companyName
-	- position
-	- location
-	- type
-	- salary
-	- description
-	- 2 buttons: Interview, Rejected
-- By default all the jobs data will show on All tab, and the Interview, Rejected tab will show “No jobs Available” message with a subtitle below and an icon/image on the above
-
-- The section should be responsive for mobile devices. It is totally up to you.
-
---- 
-
-## Functionalities Part
-- Clicking on Interview button on the card 
-    - will add the data on Interview tab 
-    - add the status as Interview.
-    - Will increase the the count of interview in Dashboard 
-
-- Clicking on Rejected button on the card 
-    - will add the data on Rejected tab 
-    - add the status as Rejected.
-    - Will increase the the count of Rejected in Dashboard
-
-- Enable toggle between Interview and rejected button(you can select Rejected button after clicking on Interview, and Interview button after clicking on Rejected button). It will change the tab and dashboard count also. It will show tab wise jobs count on the right.
-
----
-
-# Challenges Requirements
-- Clicking on the delete button will remove that card from the UI, and the count will be deducted from the dashboard card and the main section.
-- No lorem ipsum text on your website. At least 8 meaningful commits in your project.  
-
-- Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
-
-
-## Answers to Questions
-
 ### 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-### 2. How do you create and insert a new element into the DOM?
+Ans :[etElementById()]:is a DOM method that selects one single element from the document using its unique id attribute.
+
+IDs must be unique, It returns only one element.
+
+Example : 
+
+HTML :
+
+<h1 id="title">Job Tracker</h1>
+<script>
+	const heading = document.getElementById("title");
+		  heading.style.color = "blue";
+
+</script>
+			
+[getElementsByClassName()]: selects all elements that have a specific class name.
+
+ Returns an HTMLCollection , It is a live collection (updates automatically when DOM changes).
+
+Example : 
+
+HTML 
+<p class="job">Frontend</p>
+<p class="job">Backend</p>
+
+<script> 
+const jobs = document.getElementsByClassName("job");
+jobs[0].style.color = "red";
+</script>
+		 
+
+[querySelector()]: selects the first element that matches a CSS selector.
+
+Uses CSS syntax (#, ., div, etc.), Returns only the first matching element
+
+Example : 
+
+HTML :
+
+<p class="job">Frontend</p>
+<p class="job">Backend</p>
+
+<script>
+const firstJob = document.querySelector(".job");
+firstJob.style.color = "green";
+
+</script> 
+
+
+[querySelectorAll()]: selects all elements that match a CSS selector.
+
+Returns a NodeList,It is not live (static list),Supports .forEach()
+
+HTML
+
+<p class="job">Frontend</p>
+<p class="job">Backend</p>
+
+<script>
+
+const allJobs = document.querySelectorAll(".job");
+
+allJobs.forEach(job => {
+  job.style.color = "purple";
+});
+</script>
+
+A comparative table given below :
+
+| Method                   | Selects By   | Returns                | Live Collection | CSS Selector Support | forEach() Support |
+| ------------------------ | ------------ | ---------------------- | --------------- | -------------------- | ----------------- |
+| getElementById()         | id           | Single Element         | ❌ No            | ❌ No                 | ❌ No              |
+| getElementsByClassName() | class        | HTMLCollection         | ✅ Yes           | ❌ No                 | ❌ No              |
+| querySelector()          | CSS Selector | First Matching Element | ❌ No            | ✅ Yes                | ❌ No              |
+| querySelectorAll()       | CSS Selector | NodeList               | ❌ No            | ✅ Yes                | ✅ Yes             |
+
+
+
+### 2. How do you create and insert a new element into the DOM
+
+ Ans : 
+
+Creating and inserting a new element into the DOM means:
+
+Using JavaScript to create a new HTML element and then add it to the webpage dynamically.
+
+We mainly use:
+
+document.createElement()
+
+element.append()
+
+element.appendChild()
+
+element.prepend()
+
+element.insertBefore()
+
+
+
 
 ### 3. What is Event Bubbling? And how does it work?
 
+[Event Bubbling]: is a process in the DOM where:
+
+An event starts from the target element and then propagates (moves) upward to its parent elements, all the way up to the document.
+
+In simple words:
+
+👉 The event first happens on the element you clicked
+👉 Then it "bubbles up" to its parent
+👉 Then to grandparent
+👉 Then to body
+👉 Then to document
+
+
+How It Works :===>
+
+Imagine this structure:
+
+<div id="parent">
+  <button id="child">Click Me</button>
+</div>
+
+If you click the button:
+
+Event triggers on button
+
+Then moves to div
+
+Then to body
+
+Then to html
+
+Then to document
+
+This upward movement is called bubbling.
+
+
 ### 4. What is Event Delegation in JavaScript? Why is it useful?
+
+✅ Definition
+
+Event Delegation is a technique in JavaScript where:
+
+Instead of adding event listeners to multiple child elements, you add a single event listener to their parent and handle events using event bubbling.
+
+It works because of Event Bubbling (events move from child → parent).
+
+✅ How It Works
+
+1️⃣ Add event listener to a parent element
+2️⃣ When a child is clicked, the event bubbles up
+3️⃣ Use event.target to detect which child triggered the event
+
+✅ Why It Is Useful
+
+1️⃣ Better Performance
+
+Instead of 100 listeners → only 1 listener.
+
+2️⃣ Works for Dynamically Added Elements
+
+If We create new elements using createElement(),
+they automatically work.
+
+Very useful in:
+
+Dynamic lists
+
+To-do apps
+
+Job tracker apps
+
+Chat apps
+
+3️⃣ Cleaner Code
+
+Less repetition, more professional approach.
 
 ### 5. What is the difference between preventDefault() and stopPropagation() methods?
 
----
+preventDefault() is a method that:
+
+Stops the browser’s default behavior for an event.
+
+It does NOT stop event bubbling.
+It only prevents the default action.
 
 
-**Technology Stack:**
-- HTML
-- CSS (Vanilla/Tailwind/DaisyUI)
-- JavaScript (Vanilla)
+stopPropagation() is a method that:
+
+Stops the event from bubbling up to parent elements.
+
+It does NOT stop default browser behavior.
 
 
---- 
 
-## What to submit: 
+| Feature                             | preventDefault() | stopPropagation() |
+| ----------------------------------- | ---------------- | ----------------- |
+| Stops browser default action        | ✅ Yes            | ❌ No              |
+| Stops event bubbling                | ❌ No             | ✅ Yes             |
+| Used for forms & links              | ✅ Yes            | ❌ No              |
+| Used for parent-child event control | ❌ No             | ✅ Yes             |
 
-1. GitHub Repository Link: 
-2. Live Site Link: 
+
+
+
+
