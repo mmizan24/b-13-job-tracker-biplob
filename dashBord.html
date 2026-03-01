@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board </title>
+
+    <!-- tailwind connetion -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+
+<!-- daisyUI connection  -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- fon-awesome  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="w-300 mx-auto">
+
+    <header>
+        <h2 id="title" class="text-3xl font-bold pt-5 ">Job Application Tracker</h2>
+
+
+        <div class="flex gap-5  mt-5 mx-auto">
+            <div class="card w-80 bg-base-100 card-xs shadow-sm">
+
+                <div class="card-body">
+                    <h2 id="total" class="font-bold">Total</h2>
+                    <p id="total-num" class="font-bold text-xl">8</p>
+
+                </div>
+            </div>
+            <div class="card w-80 bg-base-100 card-xs shadow-sm">
+
+                <div class="card-body">
+                    <h2 class="card-title font-bold">Interveiw</h2>
+                    <p id="interVeiw-num" class="font-bold text-green-500 text-xl">0</p>
+
+                </div>
+            </div>
+            <div class="card w-80 bg-base-100 card-xs shadow-sm">
+
+                <div class="card-body">
+                    <h2 class="card-title font-bold">Rejected</h2>
+                    <p id="rejected-num" class="font-bold text-red-500 text-xl">0</p>
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr class="w-250 border-blue-200">
+
+
+
+
+
+    </header>
+
+
+    <section>
+
+        <div class=" w-250 flex justify-between pt-5">
+            <div>
+                <h2>Available Jobs </h2>
+            </div>
+            <div>
+                <p>8 <span>jobs</span></p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="pri-btn" class=" py-5 w-300 mx-auto gap-2 ">
+
+        <div>
+            <button class="btn btn-soft btn-primary w-20 ">All</button>
+            <button class="btn btn-soft btn-primary w-20">Interveiw</button>
+            <button class="btn btn-soft btn-primary w-20">Rejected </button>
+
+        </div>
+    </section>
+
+    <section class="">
+        <div class="card bg-base-100 h-100 w-250 shadow-sm flex grid-flow-col justify-center items-center ">
+            <div class="">
+                <div><img src="./jobs.png" alt="" class="w-20 "></div>
+                <div><h2 > No Jobs available</h2>
+                <p>Check back soon new job oppertunities</p></div>
+                <div class="card-actions justify-end">
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <script src="./scripts.js/biplob.js"></script>
+</body>
+
+</html>
